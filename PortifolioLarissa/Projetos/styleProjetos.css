@@ -1,0 +1,115 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    background: linear-gradient( rgb(233, 232, 232), white);
+}
+
+.barraMenu{
+    width: 100%;
+    height: 12vh;
+    /* background-color: aquamarine; */
+    padding-top: 1.8vh;
+    display: flex;
+}
+
+.textPort{
+    width: 12%;
+    height: 8vh;
+    /* background-color: blue; */
+    margin-left: 4%;
+}
+
+.textIni{
+    width: 12%;
+    height: 8vh;
+    /* background-color: rgb(7, 73, 34); */
+    margin-left: 42%;
+}
+
+.textProj{
+    width: 12%;
+    height: 8vh;
+    /* background-color: rgb(252, 11, 240); */
+    margin-left: 1%;
+}
+
+.textCont{
+    width: 12%;
+    height: 8vh;
+    /* background-color: rgb(255, 30, 0); */
+    margin-left: 1%;
+    margin-right: 4%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.textoMenu{
+    padding-top: 1.5vh;
+    font-size: 4vh;
+    padding-left: 23%;
+}
+
+.textoMenu2{
+    padding-top: 1.5vh;
+    font-size: 4vh;
+    padding-left: 32%;
+}
+
+.textoMenu3{
+    padding-top: 1.5vh;
+    font-size: 4vh;
+    padding-left: 27%;
+}
+
+.textoMenu4{
+    padding-top: 1.5vh;
+    font-size: 4vh;
+    padding-left: 27%;
+}
+
+
+.conteinerPrincipal{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(207, 118, 2);
+}
+
+.conteinerProj{
+    width: 100%;
+    height: 88vh;
+    background-color: antiquewhite;
+    padding-top: 12vh;
+    display: flex;
+}
+
+.texto{
+    width: 38%;
+    height: 61.8vh;
+    background-color: #fd2b2b;
+    margin-left: 4%;
+}
+
+.nomeProj{
+    width: 100%;
+    height: 16vh;
+    background-color: rgb(162, 17, 206);
+}
+
+.textSobreProj{
+    width: 97%;
+    height:45.7vh;
+    background-color: rgb(21, 108, 184);
+    margin-left: 3%;
+}
+
+.img{
+    width: 38%;
+    height: 61.8vh;
+    background-color: #fd2b2b;
+    margin-left: 10%;
+
+    border-radius: 12%;
+}
