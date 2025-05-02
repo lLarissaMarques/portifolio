@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Acordeão Responsivo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 5%;
+      background: #f0f0f0;
+    }
+
+    .conteinerExpansivo {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 1.5%;
+      box-shadow: 0 0.5% 2% rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .txtPExpandir {
+      padding: 4.5%;
+      cursor: pointer;
+      background-color: #eeeeee;
+      font-weight: bold;
+      border-bottom: 0.3% solid #ccc;
+    }
+
+    .txtExpandido {
+      padding: 4.5%;
+      display: block; /* começa visível */
+      background: #fafafa;
+    }
+
+    .conteinerExpansivo.closed .txtExpandido {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="conteinerExpansivo" id="expansivo">
+  <div class="txtPExpandir">Clique para expandir/recolher</div>
+  <div class="txtExpandido">
+    Este é o conteúdo que aparece quando o item está expandido.  
+    Você pode colocar aqui qualquer texto, imagens ou outros elementos.
+  </div>
+</div>
+
+<script>
+  const expansivo = document.getElementById('expansivo');
+  const txt = expansivo.querySelector('.txtPExpandir');
+
+txt.addEventListener('click', () => {
+    expansivo.classList.toggle('closed');
+  });
+</script>
+
+</body>
+</html>

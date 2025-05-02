@@ -1,0 +1,202 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    background-color: #eeeeee;
+    /* background: linear-gradient( rgb(233, 232, 232), white); */
+
+}
+
+.barraMenu{
+    width: 100%;
+    height: 12vh;
+    /* background-color: aquamarine; */
+    padding-top: 1.8vh;
+    display: flex;  
+}
+
+.textPort{
+    width: 12%;
+    height: 8vh;
+    /* background-color: blue; */
+    margin-left: 4%;
+}
+
+.textIni{
+    width: 12%;
+    height: 8vh;
+    /* background-color: rgb(7, 73, 34); */
+    margin-left: 42%;
+}
+
+.textProj{
+    width: 12%;
+    height: 8vh;
+    /* background-color: rgb(252, 11, 240); */
+    margin-left: 1%;
+}
+
+.textCont{
+    width: 12%;
+    height: 8vh;
+    /* background-color: rgb(255, 30, 0); */
+    margin-left: 1%;
+    margin-right: 4%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.textoMenu{
+  padding-top: 1.5vh;
+  font-size: 4vh;
+  padding-left: 23%;
+}
+
+.textoMenu2{
+  padding-top: 1.5vh;
+  font-size: 4vh;
+  padding-left: 32%;
+  transition: transform 0.5s ease; /* Duração e função de tempo */
+}
+
+.textoMenu2:hover {
+  transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+}
+
+.textoMenu3{
+  padding-top: 1.5vh;
+  font-size: 4vh;
+  padding-left: 27%;
+  transition: transform 0.5s ease;
+}
+
+.textoMenu3:hover {
+  transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+}
+
+.textoMenu4{
+  padding-top: 1.5vh;
+  font-size: 4vh;
+  padding-left: 27%;
+  transition: transform 0.5s ease;
+}
+
+.textoMenu4:hover {
+  transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+}
+
+.conteinerPrincipal{
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(207, 118, 2); */
+}
+
+.conteinerProj{
+    width: 100%;
+    height: 88vh;
+    /* background-color: antiquewhite; */
+    padding-top: 3%;
+}
+
+.texto{
+    width: 70%;
+    height: 150%;
+    /* background-color: #fd2b2b; */
+    margin-left: 15%;
+    border-radius: 10%;
+    padding-top: 3%;
+}
+
+/* .nomeProj{
+    width: 100%;
+    height: 16vh;
+    background-color: rgb(162, 17, 206);
+} */
+
+/* .textSobreProj{
+    width: 97%;
+    height:45.7vh;
+    background-color: rgb(21, 108, 184);
+    margin-left: 3%;
+} */
+
+.img{
+    width: 90%;
+    height: 60%;
+    background-color: #2bfd71;
+    /* margin-top: 5%; */
+    margin-left: 5%;
+    border-radius: 12%;
+}
+
+/* .conteinerExpansivo {
+    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
+    background: #fff;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+    border-radius: 1.5%;
+    box-shadow: 0 0.5% 2% rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 2%;
+  }
+
+  .txtPExpandir {
+    padding: 2.5%;
+    cursor: pointer;
+    background-color: #eeeeee;
+    font-weight: bold;
+    border-bottom: 0.3% solid #ccc;
+  }
+
+  .txtExpandido {
+    padding: 2.5%;
+    display: block; 
+    background: #fafafa;
+  }
+
+  .conteinerExpansivo.closed .txtExpandido {
+    display: none;
+  } */
+
+  .container {
+    width: 90%;
+    max-width: 80%;
+    margin: 1.5% auto;
+    /* padding: %; */
+    /* border: 1px solid #ccc; */
+    border-radius: 2%;
+    box-sizing: border-box;
+  }
+  .expansion-item {
+    border-bottom: 1px solid #ddd;
+  }
+  .expansion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 1%;
+  }
+  .expansion-header:hover {
+    background-color: #f5f5f5;
+  }
+  .expansion-content {
+    padding: 1%;
+    display: none;
+    /* border-top: 1px solid #eee; */
+  }
+
+  .expansion-item.active .expansion-content {
+    display: block;
+  }
+ 
+  .arrow {
+    transition: transform 0.3s ease;
+    font-size: 80%;
+  }
+
+  .expansion-item.active .arrow {
+    transform: rotate(180deg);
+  }
