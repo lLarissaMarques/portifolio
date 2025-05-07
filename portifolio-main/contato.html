@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Portifólio</title>
+    <link rel="stylesheet" href="styleContato.css">
+</head>
+<body>
+    <div class="barraMenuDesktop">
+        <div class="textPort"><p class="textoMenu">Portifólio</p></div>
+        <div class="textIni">
+            <p class="textoMenu2"><a href="index.html">Inicio</a></p>
+        </div>
+        <div class="textProj">
+            <p class="textoMenu3"><a href="projetos.html">Projetos</a></p>
+        </div>
+        <div class="textCont">
+            <p class="textoMenu4"><a href="contato.html">Contato</a></p>
+        </div>
+    </div>
+
+    
+    <div class="barraMenuMobile">
+        <div class="textPort"><p class="textoMenu">Portifólio</p></div>
+        <div class="containerBotaoM" id="containerBotaoM">
+            <button class="botaoMenu" id="botaoMenu">
+              <img src="icons8-cardápio-50.png" alt="menu">
+            </button>
+            <div class="txtBotaoMenu">
+              <div><p class="textoM"><a href="index.html">Incio</a></p></div>
+              <div><p class="textoM"><a href="projetos.html">Projetos</a></p></div>
+              <div><p class="textoM"><a href="contato.html">Contato</a></p></div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="conteinerPrincipal">
+        <div class="conteinerContato">
+            <div class="nomeContato"><p class="txtC">Contato</p></div>
+            <div class="contatos">
+                <img src="icons8-phone-50.png" alt="" class="icons">
+                <p class="txtInfor"> <a href="https://wa.me/5585992122770">Telefone: (85)99212-2770</a> </p>
+            </div>
+            <div class="contatos">
+                <img src="icons8-email-50.png" alt="" class="icons">
+                <p class="txtInfor"><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqXxrfHMqQzwMBJlDCpLDPrNKGwdRwDwLKkcwbBCgXZWSRSmbwxhSzGVVSKJVlTGfwQgqq">E-mail: larissa.marques141207@gmail.com</a> </p>
+            </div>
+            <div class="contatos">
+                <img src="icons8-linkedin-50.png" alt="" class="icons">
+                <p class="txtInfor"><a href="https://www.linkedin.com/in/larissa-marques-30946b359/">Linkedln: Larissa Marques</a> </p>
+            </div>
+            <div class="contatos">
+                <img src="icons8-github-48.png" alt="" class="icons">
+                <p class="txtInfor"><a href="https://github.com/lLarissaMarques">GitHub: lLarissaMarques</a></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        const containerBotaoM = document.getElementById('containerBotaoM');
+        const botaoMenu = document.getElementById('botaoMenu');
+
+        botaoMenu.addEventListener('click', () => {
+        containerBotaoM.classList.toggle('open');
+        });
+
+        window.addEventListener('click', (e) => {
+        if (!containerBotaoM.contains(e.target)) {
+            containerBotaoM.classList.remove('open');
+        }
+        });
+    </script>
+    
+</body>
+</html>

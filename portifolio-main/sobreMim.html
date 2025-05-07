@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Portifólio</title>
+    <link rel="stylesheet" href="styleSobreMim.css">
+</head>
+<body>
+    <div class="barraMenuDesktop">
+        <div class="textPort"><p class="textoMenu">Portifólio</p></div>
+        <div class="textIni">
+            <p class="textoMenu2"><a href="index.html">Inicio</a></p>
+        </div>
+        <div class="textProj">
+            <p class="textoMenu3"><a href="projetos.html">Projetos</a></p>
+        </div>
+        <div class="textCont">
+            <p class="textoMenu4"><a href="contato.html">Contato</a></p>
+        </div>
+    </div>
+
+    <div class="barraMenuMobile">
+      <div class="textPort"><p class="textoMenu">Portifólio</p></div>
+      <div class="containerBotaoM" id="containerBotaoM">
+          <button class="botaoMenu" id="botaoMenu">
+            <img src="icons8-cardápio-50.png" alt="menu">
+          </button>
+          <div class="txtBotaoMenu">
+            <div><p class="textoM"><a href="index.html">Incio</a></p></div>
+            <div><p class="textoM"><a href="projetos.html">Projetos</a></p></div>
+            <div><p class="textoM"><a href="contato.html">Contato</a></p></div>
+          </div>
+      </div> 
+  </div>
+
+    <div class="conteinerPrincipal">
+        <div class="containerTextDesktop">
+            <div class="texto">
+                <div class="sobreMim">
+                  <p class="sobreM">Sobre Mim</p>
+                </div>
+                <div class="textSobre">
+                  <p class="txtSM">Olá! Meu nome é Larissa Marques, tenho 17 anos e sou estudante 
+                  do 3º ano do curso técnico em Informática
+                  na Escola Profissionalizante Luiza de Teodoro. Sou pontual,
+                  responsável, tenho espírito de liderança e aprendo com facilidade. 
+                  Trabalho bem em equipe e desempenho minhas atividades com eficiência, mesmo sob pressão.</p>
+                </div>
+              </div>
+            <img src="3c3999fc-5378-498e-949b-56f23f02954f.jpg" alt="Foto da Larissa Marques" class="img">
+        </div>
+
+        <div class="containerTextMobile">
+          <img src="3c3999fc-5378-498e-949b-56f23f02954f.jpg" alt="Foto da Larissa Marques" class="img">
+          <div class="texto">
+              <div class="sobreMim">
+                <p class="sobreM">Sobre Mim</p>
+              </div>
+              <div class="textSobre">
+                <p class="txtSM">Olá! Meu nome é Larissa Marques, tenho 17 anos e sou estudante 
+                do 3º ano do curso técnico em Informática
+                na Escola Profissionalizante Luiza de Teodoro. Sou pontual,
+                responsável, tenho espírito de liderança e aprendo com facilidade. 
+                Trabalho bem em equipe e desempenho minhas atividades com eficiência, mesmo sob pressão.</p>
+              </div>
+            </div>
+      </div>
+
+        <div class="container">
+            <div class="expansion-item active">
+              <div class="expansion-header" onclick="toggleItem(this)">
+                <div class="txt">Linguagens</div>
+                <span class="arrow"><b>\/</b></span>
+              </div>
+              <div class="expansion-content">
+                - Python <br>
+                - Java <br>
+                - JavaScript <br>
+                - SQL
+              </div>
+            </div>
+          
+            <div class="expansion-item">
+              <div class="expansion-header" onclick="toggleItem(this)">
+                <div class="txt">Ferramentas</div>
+                <span class="arrow"><b>\/</b></span>
+              </div>
+              <div class="expansion-content">
+                - Pacote Office<br>
+                - AndroidStudio <br>
+                - Eclipse <br>
+                - SQLite <br>
+                - VSCode <br>
+                - Canva<br>
+                - Figma<br>
+              </div>
+            </div>
+
+          
+       
+    </div>
+    <script>
+        function toggleItem(header) {
+          const item = header.parentElement;
+          item.classList.toggle('active');
+        }
+    </script>
+    <script>
+      const containerBotaoM = document.getElementById('containerBotaoM');
+      const botaoMenu = document.getElementById('botaoMenu');
+
+      botaoMenu.addEventListener('click', () => {
+        containerBotaoM.classList.toggle('open');
+      });
+
+      window.addEventListener('click', (e) => {
+        if (!containerBotaoM.contains(e.target)) {
+            containerBotaoM.classList.remove('open');
+          }
+        });
+    </script>
+        
+    
+</body>
+</html>

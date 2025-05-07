@@ -1,0 +1,389 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+  width: 100%;
+  height: 100%;
+ 
+}
+
+@font-face {
+  font-family: 'poppins';  /* Nome da fonte que você vai usar */
+  src: url('/Poppins-Regular.ttf') ;
+  }
+
+.barraMenuDesktop{
+    width: 100%;
+    height: 12vh;
+    /* background-color: aquamarine; */
+    padding-top: 1.8vh;
+    display: flex;  
+    background:rgb(206, 205, 205);
+    font-family: poppins;
+}
+
+.textPort{
+    width: 12%;
+    height: 80%;
+    /* background-color: blue; */
+    margin-left: 4%;
+    font-family: poppins;
+}
+
+.textIni{
+    width: 12%;
+    height: 80%;
+    /* background-color: rgb(7, 73, 34); */
+    margin-left: 42%;
+    font-family: poppins;
+}
+
+.textProj{
+    width: 12%;
+    height: 80%;
+    /* background-color: rgb(252, 11, 240); */
+    margin-left: 1%;
+    font-family: poppins;
+}
+
+.textCont{
+    width: 12%;
+    height: 80%;
+    /* background-color: rgb(255, 30, 0); */
+    margin-left: 1%;
+    margin-right: 4%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.textoMenu{
+  padding-top: 6%;
+  font-size: 130%;
+  padding-left: 23%;
+}
+
+.textoMenu2{
+  padding-top: 6%;
+  font-size: 130%;
+  padding-left: 32%;
+  transition: transform 0.5s ease; /* Duração e função de tempo */
+}
+
+.textoMenu2:hover {
+  transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+}
+
+.textoMenu3{
+  padding-top: 6%;
+  font-size: 130%;
+  padding-left: 27%;
+  transition: transform 0.5s ease;
+}
+
+.textoMenu3:hover {
+  transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+}
+
+.textoMenu4{
+  padding-top: 6%;
+  font-size: 130%;
+  padding-left: 27%;
+  transition: transform 0.5s ease;
+}
+
+.textoMenu4:hover {
+  transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+}
+
+.barraMenuMobile{
+  width: 100%;
+  height: 12vh;
+  background-color: rgb(206, 205, 205);
+  /* background-color: aquamarine; */
+  padding-top: 1.8vh;
+  display: flex ;
+ 
+}
+
+.containerBotaoM {
+  position: relative;
+  display: inline-block;
+}
+
+.botaoMenu {
+  width: 49%;
+  height: 5vh;
+  background-color: #cfcece;
+  color: rgb(0, 0, 0);
+  margin-left: 40%;
+  padding: 2% 4%; /* antes: 10px 16px */
+  font-size: 1.2vw; /* adaptado com viewport width */
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5vw;
+  margin-top: 3%;
+}
+
+.txtBotaoMenu {
+  width: 100%;
+  height: auto;
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  min-width: 20vw; /* antes: 160px */
+  box-shadow: 0 0.4vw 0.8vw rgba(0, 0, 0, 0.15); /* antes: px */
+  border-radius: 0.5vw;
+  z-index: 1;
+  margin-top: 0.5vw;
+}
+
+.txtM {
+  color: black;
+  padding: 2%;
+  cursor: pointer;
+  font-family: poppins;
+  font-size: 130%
+}
+
+.txtBotaoMenu div:hover {
+  background-color: rgba(204, 204, 204, 0.5);
+
+}
+
+.containerBotaoM.open .txtBotaoMenu {
+  display: block;
+}
+
+/* Torna a imagem do botão menor e mais responsiva */
+.botaoMenu img {
+  width: 28%;
+  height: auto;
+}
+
+.conteinerPrincipal{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgb(206, 205, 205), white);
+    /* background-color: rgb(207, 118, 2); */
+}
+
+.conteinerProj{
+    width: 100%;
+    height: 88vh;
+    /* background-color: antiquewhite; */
+    padding-top: 3%;
+}
+
+.imgM{
+  width: 90%;
+  height: 50%;
+  /* background-color: #2bfd71; */
+  /* margin-top: 5%; */
+  margin-left: 5%;
+  border-radius: 3vh;
+  margin-top: 2%;
+}
+
+.textoM{
+    width: 70%;
+    height: auto;
+    background-color: #c7c7c7;
+    border: 0.3vh solid  #737373;;
+    margin-left: 15%;
+    border-radius: 10%;
+    padding-top: 2%;
+    margin-top: 2%;
+}
+
+.imgH{
+  width: 90%;
+  height: 60%;
+  /* background-color: #2bfd71; */
+  /* margin-top: 5%; */
+  margin-left: 5%;
+  border-radius: 3vh;
+  margin-top: 2%;
+}
+
+.textoH{
+  width: 70%;
+  height: auto;
+  background-color: #c7c7c7;
+  border: 0.3vh solid  #737373;;
+  margin-left: 15%;
+  border-radius: 10%;
+  padding-top: 2%;
+  margin-top: 2%;
+}
+
+.imgMM{
+  width: 90%;
+  height: 53%;
+  /* background-color: #2bfd71; */
+  /* margin-top: 5%; */
+  margin-left: 5%;
+  border-radius: 3vh;
+  margin-top: 2%;
+}
+
+.textoMM{
+  width: 70%;
+  height: auto;
+  background-color: #c7c7c7;
+  border: 0.3vh solid  #737373;;
+  margin-left: 15%;
+  border-radius: 10%;
+  padding-top: 2%;
+  margin-top: 2%;
+}
+
+.imgCFE{
+  width: 90%;
+  height: 63%;
+  /* background-color: #2bfd71; */
+  /* margin-top: 5%; */
+  margin-left: 5%;
+  border-radius: 3vh;
+  margin-top: 2%;
+}
+
+.textoCFE{
+  width: 70%;
+  height: auto;
+  background-color: #c7c7c7;
+  border: 0.3vh solid  #737373;;
+  margin-left: 15%;
+  border-radius: 10%;
+  padding-top: 2%;
+  margin-top: 2%;
+}
+
+.imgAD{
+  width: 90%;
+  height: 50%;
+  /* background-color: #2bfd71; */
+  /* margin-top: 5%; */
+  margin-left: 5%;
+  border-radius: 3vh;
+  margin-top: 2%;
+}
+
+.textoAD{
+  width: 70%;
+  height: auto;
+  background-color: #c7c7c7;
+  border: 0.3vh solid  #737373;;
+  margin-left: 15%;
+  border-radius: 10%;
+  padding-top: 2%;
+  margin-top: 2%;
+}
+
+.txt{
+  font-family: poppins;
+  font-size: 130%;
+}
+
+  .container {
+    width: 90%;
+    max-width: 80%;
+    margin: 1.5% auto;
+    border-radius: 2%;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+  }
+  .expansion-item {
+    border-bottom: 1px solid #ddd;
+  }
+  .expansion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 1%;
+  }
+  .expansion-header:hover {
+    background-color:rgb(206, 205, 205);
+  }
+  .expansion-content {
+    padding: 1%;
+    display: none;
+    font-family: poppins;
+    font-size: 90%;
+    text-align: justify;
+  }
+
+  .expansion-item.active .expansion-content {
+    display: block;
+   
+  }
+ 
+  .arrow {
+    transition: transform 0.3s ease;
+    font-size: 80%;
+  }
+
+  .expansion-item.active .arrow {
+    transform: rotate(180deg);
+  }
+
+  .barraMenuMobile {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .barraMenuDesktop {
+        display: none;
+    }
+
+    .barraMenuMobile {
+        flex-direction:row;
+        height: auto;
+        margin-left: 0;
+        padding-bottom: 2vh;
+        display: flex;
+    }
+
+    .containerBotaoM{
+        width: 50%;
+        height: 100%;
+    }
+
+    .textPort {
+        width: 50%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .textoMenu {
+        padding-left: 3.2vh;
+    }
+  
+    .conteinerProj {
+      padding-top: 5%;
+    }
+  
+    .imgM, .imgH, .imgMM, .imgCFE, .imgAD {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+    }
+  
+    .textoM,  
+    .textoH,
+    .textoMM,
+    .textoCFE,
+    .textoAD {
+      width: 90%;
+      margin-left: 5%;
+      height: auto;
+      padding: 5%;
+    }
+  
+    .txt {
+      font-size: 100%;
+    }
+  }
+  

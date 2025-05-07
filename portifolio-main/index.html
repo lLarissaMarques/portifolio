@@ -1,0 +1,81 @@
+            <!DOCTYPE html>
+            <html lang="pt-br">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Inicio - Portifólio</title>
+                <link rel="stylesheet" href="styleInicio.css">
+            </head>
+            <body>
+                <div class="barraMenuDesktop">
+                    <div class="textPort"><p class="textoMenu">Portifólio</p></div>
+                    <div class="textIni">
+                        <p class="textoMenu2"><a href="index.html">Inicio</a></p>
+                    </div>
+                    <div class="textProj">
+                        <p class="textoMenu3"><a href="projetos.html">Projetos</a></p>
+                    </div>
+                    <div class="textCont">
+                        <p class="textoMenu4"><a href="contato.html">Contato</a></p>
+                    </div>
+                </div>
+
+                <div class="barraMenuMobile">
+                    <div class="textPort"><p class="textoMenu">Portifólio</p></div>
+                    <div class="containerBotaoM" id="containerBotaoM">
+                        <button class="botaoMenu" id="botaoMenu">
+                          <img src="icons8-cardápio-50.png" alt="menu">
+                        </button>
+                        <div class="txtBotaoMenu">
+                          <div><p class="textoM"><a href="index.html">Incio</a></p></div>
+                          <div><p class="textoM"><a href="projetos.html">Projetos</a></p></div>
+                          <div><p class="textoM"><a href="contato.html">Contato</a></p></div>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="conteinerPrincipalDesktop">
+                    <div class="texto">
+                        <div class="nome"><p class="txtN">Larissa Marques</p></div>
+                        <div class="ti"><p class="txtTI">Técnico em TI - Ênfase em Desenvolvimento</p></div>
+                        <div class="bemVindo"><p class="txtBV">Seja bem-vindo ao meu portifólio</p></div>
+                        <div class="botao">
+                            <button class="estiloB"><a href="sobreMim.html">Sobre Mim</a></button>
+                        </div>
+                    </div>
+                
+                    
+                    <img src="/3c3999fc-5378-498e-949b-56f23f02954f.jpg" alt="Foto da Larissa Marques " class="img">
+                
+                </div>
+
+                <div class="conteinerPrincipalMobile">
+                    <img src="/3c3999fc-5378-498e-949b-56f23f02954f.jpg" alt="Foto da Larissa Marques " class="img">
+                    <div class="texto">
+                        <div class="nome"><p class="txtN">Larissa Marques</p></div>
+                        <div class="ti"><p class="txtTI">Técnico em TI - Ênfase em Desenvolvimento</p></div>
+                        <div class="bemVindo"><p class="txtBV">Seja bem-vindo ao meu portifólio</p></div>
+                        <div class="botao">
+                            <button class="estiloB"><a href="sobreMim.html">Sobre Mim</a></button>
+                        </div>
+                    </div>
+                
+                </div>
+
+                 <script>
+                    const containerBotaoM = document.getElementById('containerBotaoM');
+                    const botaoMenu = document.getElementById('botaoMenu');
+
+                    botaoMenu.addEventListener('click', () => {
+                    containerBotaoM.classList.toggle('open');
+                    });
+
+                    window.addEventListener('click', (e) => {
+                    if (!containerBotaoM.contains(e.target)) {
+                        containerBotaoM.classList.remove('open');
+                    }
+                    });
+                </script>
+                
+            </body>
+            </html>
